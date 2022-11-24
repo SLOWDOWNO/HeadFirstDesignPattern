@@ -11,7 +11,7 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement
     public CurrentConditionsDisplay(Subject weatherData)
     {
         this.weatherData = weatherData;
-        weatherData.registerObserver(this);//告诉主题 注册成为了观察者
+        weatherData.registerObserver(this);//告诉主题 自己要注册成为观察者
     }
     @Override
     public void update(float temperature, float humidity, float pressure)
